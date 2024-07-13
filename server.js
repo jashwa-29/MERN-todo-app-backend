@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 app.use(express.json());
 app.use(cors());
 
-let mongourl = 'mongodb://127.0.0.1:27017/mernapp';
+let mongourl = 'mongodb+srv://jashwa-29:fXxQeI3RwO487uU5@cluster0.0tbvc4t.mongodb.net/mernapp';
 mongoose.connect(mongourl).then(() => {
     console.log('Database connected');
 }).catch((err) => {
